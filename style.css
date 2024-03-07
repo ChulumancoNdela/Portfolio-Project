@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: url('img/1813a1d1859e87d8f51e0f34c97ad048 (1).jpg '); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: bisque;
+    background-image: url('  img/creative-wallpaper-with-white-shapes.jpg     ');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+.header{
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin-left: 220px;
+}
+
+.header h1{
+    margin-bottom: 10px;
+}
+
+.hero{
+    /* background-image: url('    img/creative-wallpaper-with-white-shapes.jpg  '); */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+     color: black;
+}
+
+.hero p{
+    font-size: 36px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color : black;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px; /* Adjust as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    padding-top: 20px;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li{
+    padding: 10px;
+}
+
+
+.sidebar ul li a{
+    color: wheat;
+    text-decoration: none;
+}
+
+
+.sidebar-header img{
+    width: 65%;
+    border-radius: 50%;
+    display: block;
+    border: 4px solid black;
+    margin: auto;
+}
+
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: whitesmoke;
+}
+
+
+.sidebar a:hover {
+    background-color: bisque;
+}
+
+.content{
+    margin-left: 220px;
+    padding: 20px;
+}
+.content img{
+    width: 115px;
+    margin-right: 30px;
+    border-radius: 60%;
+    display: block;
+    border: 4px solid black;
+}
+
+.portfolio-description{
+    flex-grow: 1;
+}
+
+
+.portfolio-description h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.portfolio-description p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;  
+    transition: background-color 0.3s ease;
+}
+
+.footer{
+    background-color: #333;
+    color: bisque;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media{
+    margin-bottom: 20px;
+}
+
+.social-media a{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+address{
+    font-style: normal;
+}
