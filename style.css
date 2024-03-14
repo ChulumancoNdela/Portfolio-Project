@@ -6,17 +6,18 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-color: bisque;
-    background-image: url('  img/creative-wallpaper-with-white-shapes.jpg     ');
+    background-image: url('img/creative-wallpaper-with-white-shapes.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 100px 20px;
-    height: 100vh;
+    height: 50vh;
+    min-width: auto;
 }
 
 .header{
     color: #fff;
-    padding: 0;
+    padding: 20px;
     text-align: center;
     margin-left: 220px;
 }
@@ -32,7 +33,37 @@ body{
     text-align: center;
     padding: 100px 20px;
     height: 100vh;
-     color: black;
+    color: black;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#typed-text{
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange; /* Adjust the color and size of the cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em; /* Adjust letter spacing */
+    animation: typing 2s steps(30, end), blink-caret .5s step-end infinite alternate;
+}
+
+@keyframes typing{
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange
+    }
 }
 
 .hero p{
@@ -42,9 +73,50 @@ body{
     color : black;
 }
 
+/* #about{
+ background-color: #f9f9f9;
+ padding: 50px 0;
+ text-align: center;
+} */
+
+.container{
+    max-width: 800%; 
+    margin: left ;
+    text-align: left; 
+    padding-right: 20px;
+    /* border-radius: 400px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; */
+}
+.container p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.container p:last-child {
+    margin-bottom: 0; /* Remove margin from last paragraph */
+}
+.container
+
+#about h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+#about p{
+    /* font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444; */
+    /* font-size: 20px; */
+    margin-bottom: 15px;
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 .sidebar {
     height: 100%;
-    width: 250px; /* Adjust as needed */
+    width: 200px; /* Adjust as needed */
     position: fixed;
     top: 0;
     left: 0;
@@ -55,21 +127,36 @@ body{
 .sidebar ul{
     list-style-type: none;
     padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar li{
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between navigation items */
 }
 
 .sidebar ul li{
     padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 .sidebar ul li a{
     color: wheat;
     text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.sidebar ul li a i{
+    margin-right: 5px; 
 }
 
-
 .sidebar-header img{
-    width: 60%;
+    width: 40%;
     border-radius: 50%;
     display: block;
     border: 4px solid black;
@@ -86,7 +173,10 @@ body{
 
 
 .sidebar a:hover {
-    background-color: whitesmoke;
+    background-color: bisque;
+    color:gainsboro; /* Change the color as needed */
+    text-decoration: underline; /* Add underline on hover */
+    cursor: pointer; /* Optional: Change cursor to pointer on hover */
 }
 
 .content{
@@ -100,12 +190,29 @@ body{
     display: block;
     border: 4px solid black;
 }
+.menu-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: grey;
+    color:bisque;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
 
+.menu-button:hover{
+    background-color: #555; 
+}
+
+.menu-button:active{
+    background-color: #222;
+}
 .portfolio-description{
-  background-color:whitesmoke;
-  padding: 20px;
-  border-radius: 200px;
+  background-color:lightgrey;
+  padding-right: 20px;
+  border-radius: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 
@@ -113,6 +220,7 @@ body{
     font-size: 24px;
     margin-top: 0;
     color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* text-decoration: underline; */
 }
 
@@ -123,6 +231,7 @@ body{
     color: black;
     font-size: 16px;
     line-height: 1.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .portfolio-description a.btn{
@@ -131,9 +240,13 @@ body{
   background-color: #007bff;
   color: #fff;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 70px;
 }
 
+.portfolio-description a.btn:hover{
+    
+    background-color: bisque;
+}
 
 .btn{
     display: inline-block;
@@ -141,20 +254,145 @@ body{
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;  
+    border-radius: 70px;  
     transition: background-color 0.3s ease;
+
 }
 
+.main{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main:hover{
+    background-color: bisque; 
+}
+
+.h1{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 400px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.label{
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input[type="text"],
+input[type="email"],
+.textarea{
+    width: 200px;
+    padding: auto;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.textarea{
+    resize: vertical;
+
+    width: 100%; /* Make textarea fill the available width */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 15px; /* Add spacing between textarea and other elements */
+    border: 1px solid #ccc; /* Add a border for the textarea */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    resize: vertical; /* Allow vertical resizing of textarea */
+    font-family: Arial, sans-serif; /* Specify the font family */
+    font-size: 14px; /* Specify the font size */
+    line-height: 1.5; /* Specify the line height */
+    color: #333; /* Specify the text color */
+    background-color: #fff; /* Specify the background color */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+  }
+
+  .textarea:focus{
+  outline: none; /* Remove the default focus outline */
+  border-color: #007bff; /* Change border color on focus */ 
+  }
+button[type="submit"]{
+    background-color:#007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button[type="submit"]:hover{
+    background-color: orange;
+}
 .footer{
     background-color: #333;
     color: bisque;
     padding: 20px;
     text-align: center;
 }
+#map{
+    margin-top: 40px;
+}
+#map h2{
+    font-size: 24px;
+}
+#map a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
+#map a:hover {
+    background-color: bisque;
+  }
+
+  #connect{
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+
+  #connect h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+    
+ #connect{
+   list-style-type: none; 
+   padding: 0;
+  }
+
+  #connect ul li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  #connect ul li :last-child{
+    margin-right: 0;
+  }
+  #connect ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  #connect ul li a:hover {
+    color: bisque; /* Change to your preferred hover color */
+}
 .social-media{
     margin-bottom: 20px;
 }
+
 
 .social-media a{
     display: inline-block;
@@ -164,3 +402,91 @@ body{
 address{
     font-style: normal;
 }
+#view-cv {
+    text-align: center; /* Center align the content */
+  }
+  
+  #view-cv .container {
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .btn {
+    display: inline-block; /* Make the button inline block to fit content */
+    padding: 10px 20px; /* Add padding for better button appearance */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove default underline for links */
+    border-radius: 70px; /* Add border radius for rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn:hover {
+    background-color: bisque; /* Change background color on hover */
+  }
+  .portfolio {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    
+
+
+.project p {
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.project a {
+    display: inline-block;
+    background-color: #007bff;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.project a:hover {
+    background-color: bisque;
+}
+
+#back-to-top-btn {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    z-index: 99; /* Ensure the button is above other elements */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Make the button round */
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }

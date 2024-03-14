@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="logo icon" type="image/x-icon" href="src\favicon_io\favicon.ico" />
+    <script src="https://kit.fontawesome.com/e68d0b4773.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <nav class="sidebar">
+        <div class="sidebar-header"> 
+          <img src="img\background.jpeg" alt="Sidebar Image">
+          <a href="Contact.html" class="menu-button">Chulumanco Ndela</a>
+          <ul>
+             
+       <a href="index.html"><i class="fa-solid fa-house" style="color: #74C0FC;">&nbsp;&nbsp;</i>Home</a>&nbsp;&nbsp;
+       <a href="About.html"><i class="fa-solid fa-address-card" style="color: #74C0FC;">&nbsp;&nbsp;</i>About</a>&nbsp;&nbsp;
+       <a href="Contact.html"><i class="fa-solid fa-phone" style="color: #74C0FC;">&nbsp;&nbsp;</i>Contact</a>&nbsp;&nbsp;
+       <a href="Services.html"><i class="fa-solid fa-briefcase" style="color: #74C0FC;">&nbsp;&nbsp;</i>Services</a>&nbsp;&nbsp;
+       <a href="skills.html"><i class="fa-solid fa-lightbulb fa-lg" style="color: #74C0FC;">&nbsp;&nbsp;&nbsp;&nbsp;</i>SkillS</a>&nbsp;&nbsp;
+       
+          </ul>
+        </div>
+    </nav>
+<header>
+    <main>
+        <h1>Contact Me</h1>
+        <form action="process_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+         <section id="map">
+            <h2>My location</h2>
+            <a href="https://www.google.com/maps/place/97+Durham+Ave,+Salt+River,+Cape+Town,+7925/@-33.9333712,18.4580844,17z/data=!3m1!4b1!4m6!3m5!1s0x1dcc5d08518ba1b9:0x1398e85e424f762!8m2!3d-33.9333712!4d18.4606593!16s%2Fg%2F11csmklmbs?entry=ttu" target="_blank">View Map Location</a>
+            
+         </section>
+    </main>
+</header>
+
+<section id="connect">
+    <h2>Connect with Me</h2>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/chulumanco-ndela-5a0b14252/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #74C0FC;"></i></a> </li>
+        <li><a href="https://www.instagram.com/chulumanco_mkhush/" target="_blank"><i class="fa-brands fa-instagram" style="color: #74C0FC;"></i></a></li>
+        <li><a href="https://github.com/ChulumancoNdela" target="_blank"><i class="fa-brands fa-github" style="color: #74C0FC;"></i></a></li> 
+        <li><a href="tel:+27672150419"><i class="fa-solid fa-phone-volume" style="color: #74C0FC;"></i></a></li>   
+        <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fa-solid fa-envelope" style="color: #74C0FC;"></i></a></li>
+
+</section>
+<div></div>
+    <footer>
+     
+      <address>
+          97 Durham Salt river, Cape Town, South Africa<br>
+          Phone: 0737493683 <br>
+          Email: ndelachulumanco@gmail.com
+      </address>
+      </footer>
 </body>
 </html>
