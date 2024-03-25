@@ -17,7 +17,7 @@ body{
 
 .header{
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     margin-left: 220px;
 }
@@ -79,15 +79,20 @@ body{
  text-align: center;
 } */
 
-.container{
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+/* .container{
     max-width: 800%; 
     margin: left ;
     text-align: left; 
-    padding-right: 20px;
-    /* border-radius: 400px; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9; */
-}
+    padding-right:0 20px;
+   
+} */
 .container p{
     font-size: 16px;
     line-height: 1.5;
@@ -171,6 +176,31 @@ body{
     color: whitesmoke;
 }
 
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    background: gray;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+    
+    .content {
+      margin-left: 200px;
+    }
+  }
+  
+  .toggle-btn:hover {
+    background-color: bisque;
+    color:gainsboro; /* Change the color as needed */
+  }
 
 .sidebar a:hover {
     background-color: bisque;
